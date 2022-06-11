@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norbert Bope dev front-end</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="container__header">
+            <div class="header__logo reveal">
+                <span>Norbert</span>dev
+            </div>
+            <nav class="header__nav reveal">
+                <a href="#" class="nav__link link-active">Accueil</a>
+                <a href="#about" class="nav__link">À propos</a>
+                <a href="#service" class="nav__link">Services</a>
+                <a href="#project" class="nav__link">Portfolio</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </nav>
+            <div class="header__link-network reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path d="M32 6C26.568583 6 22.160643 10.388731 22.042969 15.792969C17.240727 15.216998 14.113589 13.421507 12.195312 11.652344C10.067982 9.6903754 9.3945312 7.9472656 9.3945312 7.9472656 A 1.50015 1.50015 0 0 0 6.8007812 7.5996094C6.8007812 7.5996094 5 10 5 13.5C5 15.500985 5.6317952 16.981554 6.3847656 18.236328C6.3570276 18.223338 6.1699219 18.158203 6.1699219 18.158203 A 1.50015 1.50015 0 0 0 4.0058594 19.636719C4.0058594 19.636719 4.5832039 23.856843 8.5507812 26.941406L8.1367188 27.044922 A 1.50015 1.50015 0 0 0 7.1972656 29.244141C7.1972656 29.244141 7.8700527 30.382221 9.2792969 31.580078C10.11485 32.290298 11.34227 33.023169 12.789062 33.701172C11.012271 34.35044 8.362818 35 4.5 35 A 1.50015 1.50015 0 0 0 3.3710938 37.488281C3.3710938 37.488281 4.5173251 38.751002 6.7832031 39.849609C9.0490812 40.948217 12.539474 42 17.5 42C26.219697 42 32.484656 37.817151 36.394531 32.515625C40.304407 27.214099 42 20.861111 42 16C42 15.691547 41.980739 15.387437 41.953125 15.085938C44.064371 13.051602 44.856626 11.522235 44.894531 11.447266C45.084531 11.066266 45.01375 10.608688 44.71875 10.304688C44.42475 9.9996875 43.969031 9.9137969 43.582031 10.091797L43.419922 10.166016C43.280922 10.230016 43.141953 10.294422 43.001953 10.357422C43.408953 9.7084219 43.730125 9.014875 43.953125 8.296875C44.077125 7.900875 43.943234 7.4669375 43.615234 7.2109375C43.287234 6.9549375 42.835469 6.9275312 42.480469 7.1445312C41.258221 7.8873594 40.086652 8.40739 38.867188 8.7558594C37.072578 7.0534724 34.656873 6 32 6 z M 32 9C35.883178 9 39 12.116822 39 16C39 20.138889 37.445593 26.035901 33.980469 30.734375C30.515344 35.432849 25.280303 39 17.5 39C13.7348 39 11.230189 38.318942 9.3535156 37.582031C11.319341 37.276755 13.011947 36.869367 14.228516 36.398438C16.338182 35.581792 17.476563 34.638672 17.476562 34.638672 A 1.50015 1.50015 0 0 0 16.863281 32.044922C14.140556 31.364241 12.394328 30.263307 11.298828 29.345703L12.863281 28.955078 A 1.50015 1.50015 0 0 0 13.039062 26.099609C9.7939415 24.851486 8.4312292 23.086373 7.734375 21.607422C8.5823538 21.782967 9.3718961 22 10.5 22 A 1.50015 1.50015 0 0 0 11.169922 19.158203C11.169922 19.158203 8 17.7 8 13.5C8 12.745947 8.2088435 12.268355 8.3613281 11.697266C8.884507 12.400354 9.3156815 13.07859 10.160156 13.857422C12.734824 16.231954 16.990366 18.653154 23.419922 18.998047 A 1.50015 1.50015 0 0 0 25 17.5L25 16C25 12.116822 28.116822 9 32 9 z" fill="#333333" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path d="M24 4C12.972066 4 4 12.972074 4 24C4 35.027926 12.972066 44 24 44C35.027934 44 44 35.027926 44 24C44 12.972074 35.027934 4 24 4 z M 24 7C28.142307 7 31.929518 8.4763377 34.875 10.927734C32.122374 13.351092 28.974768 15.323142 25.580078 16.835938C23.811529 13.61959 21.891654 10.500767 19.736328 7.5585938C21.100562 7.2070927 22.524179 7 24 7 z M 16.785156 8.6171875C18.997535 11.542724 20.949628 14.664262 22.746094 17.886719C19.050465 19.170625 15.137713 20 11 20C9.8323552 20 8.6813446 19.922155 7.5390625 19.810547C8.7969115 14.835264 12.230939 10.75149 16.785156 8.6171875 z M 37.001953 13.046875C39.461176 15.964926 40.9535 19.721786 40.992188 23.837891C38.832662 23.296195 36.575941 23 34.25 23C32.4219 23 30.655764 23.235969 28.925781 23.574219C28.323231 22.178362 27.663283 20.821807 26.984375 19.46875C30.643681 17.813906 34.040456 15.676234 37.001953 13.046875 z M 24.177734 20.570312C24.811258 21.821635 25.45011 23.063845 26.015625 24.353516C19.953229 26.24965 14.749259 30.09875 11.257812 35.238281C8.6153572 32.243192 7 28.319322 7 24C7 23.585614 7.0335222 23.180292 7.0625 22.773438C8.3577913 22.906235 9.665848 23 11 23C15.643379 23 20.045102 22.063249 24.177734 20.570312 z M 34.25 26C36.498791 26 38.668342 26.319367 40.738281 26.882812C39.953494 31.489342 37.336086 35.457573 33.644531 38.001953C32.755328 34.064901 31.510607 30.269114 30.085938 26.5625C31.460152 26.325929 32.807024 26 34.25 26 z M 27.091797 27.125C28.662683 31.125628 30.006215 35.241408 30.90625 39.53125C28.795754 40.468547 26.462824 41 24 41C20.010678 41 16.357113 39.622608 13.460938 37.332031C16.608874 32.477365 21.430763 28.841138 27.091797 27.125 z" fill="#333333" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path d="M16.5 5C10.16639 5 5 10.16639 5 16.5L5 31.5C5 37.832757 10.166209 43 16.5 43L31.5 43C37.832938 43 43 37.832938 43 31.5L43 16.5C43 10.166209 37.832757 5 31.5 5L16.5 5 z M 16.5 8L31.5 8C36.211243 8 40 11.787791 40 16.5L40 31.5C40 36.211062 36.211062 40 31.5 40L16.5 40C11.787791 40 8 36.211243 8 31.5L8 16.5C8 11.78761 11.78761 8 16.5 8 z M 34 12C32.895 12 32 12.895 32 14C32 15.105 32.895 16 34 16C35.105 16 36 15.105 36 14C36 12.895 35.105 12 34 12 z M 24 14C18.495178 14 14 18.495178 14 24C14 29.504822 18.495178 34 24 34C29.504822 34 34 29.504822 34 24C34 18.495178 29.504822 14 24 14 z M 24 17C27.883178 17 31 20.116822 31 24C31 27.883178 27.883178 31 24 31C20.116822 31 17 27.883178 17 24C17 20.116822 20.116822 17 24 17 z" fill="#333333" />
+                </svg>
+            </div>
+        </header>
+        <section class="container__banner">
+            <div class="banner-left">
+                <h1 class="reveal">Salut, Je suis Norbert <br>Dev Web Front-End Junior | Dev Delphi full-stack </h1>
+                <p class="reveal">Vous cherechez un développeur pour construire votre marque et développer votre entreprise? Je suis disponible.</p>
+                <div class="controll__banner">
+                    <button class="btn btn-clr-orange reveal">Télécharger le CV</button>
+                    <button class="btn btn-clr-black reveal">Contactez moi</button>
+                </div>
+            </div>
+            <div class="banner-rigth reveal">
+                <img src="./img/norba.png" alt="image_profil">
+            </div>
+        </section>
+        <section class="container__work-details">
+            <div class="indication">
+                <span class="number reveal" value-count="100" value-progress="0">
+                    0
+                </span>
+                <span class="name-indication reveal">
+                    PROJETS TERMINES
+                </span>
+            </div>
+            <div class="indication">
+                <span class="number reveal" value-count="10" value-progress="0">
+                    0
+                </span>
+                <span class="name-indication reveal">
+                    DESIGN AWARDS
+                </span>
+            </div>
+            <div class="indication">
+                <span class="number reveal" value-count="5" value-progress="0">
+                    0
+                </span>
+                <span class="name-indication reveal">
+                    ANNEE D'EXPERIENCE
+                </span>
+            </div>
+            <div class="indication">
+                <span class="number reveal" value-count="50" value-progress="0">
+                    0
+                </span>
+                <span class="name-indication reveal">
+                    CLIENTS HEUREUX
+                </span>
+            </div>
+        </section>
+        <section class="container__service" id="service">
+            <div class="title">
+                <span class="title-section reveal">MES SERVICES</span>
+                <span class="section-text reveal">CE QUE NOUS FAISONS</span>
+            </div>
+            <main class="service__container">
+                <div class="service reveal">
+                    <div class="service__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path d="M10.5 6C10.3105 6 10.124082 6.0104805 9.9394531 6.0292969C9.571481 6.0667987 9.2141905 6.1413291 8.8710938 6.2480469C7.1472189 6.7842455 5.7842455 8.1472189 5.2480469 9.8710938C5.1413291 10.21419 5.0667987 10.571481 5.0292969 10.939453C5.0292305 10.940097 5.0293631 10.940762 5.0292969 10.941406C5.0106094 11.125412 5 11.311158 5 11.5L5 13.5L5 36.5C5 39.519774 7.4802259 42 10.5 42L37.5 42C40.519774 42 43 39.519774 43 36.5L43 13.5L43 11.5C43 11.310603 42.989737 11.124126 42.970703 10.939453C42.933201 10.571481 42.858671 10.21419 42.751953 9.8710938C42.215754 8.1472189 40.852781 6.7842455 39.128906 6.2480469C38.78581 6.1413291 38.428519 6.0667987 38.060547 6.0292969C38.059905 6.0292315 38.059235 6.029362 38.058594 6.0292969C37.874547 6.0103939 37.688736 6 37.5 6L10.5 6 z M 10.5 9C11.328 9 12 9.672 12 10.5C12 11.328 11.328 12 10.5 12C9.672 12 9 11.328 9 10.5C9 9.672 9.672 9 10.5 9 z M 15.5 9C16.328 9 17 9.672 17 10.5C17 11.328 16.328 12 15.5 12C14.672 12 14 11.328 14 10.5C14 9.672 14.672 9 15.5 9 z M 21.5 9L37.5 9C38.328 9 39 9.672 39 10.5C39 11.328 38.328 12 37.5 12L21.5 12C20.672 12 20 11.328 20 10.5C20 9.672 20.672 9 21.5 9 z M 8 15L40 15L40 36.5C40 37.898226 38.898226 39 37.5 39L10.5 39C9.1017741 39 8 37.898226 8 36.5L8 15 z M 12.5 18 A 1.50015 1.50015 0 0 0 11 19.5L11 34.5 A 1.50015 1.50015 0 0 0 12.5 36L20.5 36 A 1.50015 1.50015 0 0 0 22 34.5L22 19.5 A 1.50015 1.50015 0 0 0 20.5 18L12.5 18 z M 26.5 18 A 1.50015 1.50015 0 1 0 26.5 21L35.5 21 A 1.50015 1.50015 0 1 0 35.5 18L26.5 18 z M 14 21L19 21L19 33L14 33L14 21 z M 26.5 23 A 1.50015 1.50015 0 1 0 26.5 26L35.5 26 A 1.50015 1.50015 0 1 0 35.5 23L26.5 23 z M 26.5 28 A 1.50015 1.50015 0 1 0 26.5 31L35.5 31 A 1.50015 1.50015 0 1 0 35.5 28L26.5 28 z M 26.5 33 A 1.50015 1.50015 0 1 0 26.5 36L31.5 36 A 1.50015 1.50015 0 1 0 31.5 33L26.5 33 z" fill="#333333" />
+                        </svg>
+                    </div>
+                    <span class="service__name">Créations des sites</span>
+                    <p class="service__details">
+                        Obtenez un site vitrine pour votre entreprise, un site web pour votre business au complet bien designer en un temps record ! Et cela à un gout complètement réduit.
+                    </p>
+                </div>
+                <div class="service reveal">
+                    <div class="service__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path d="M13.671875 5.0097656C12.773072 5.0097656 11.87432 5.3483358 11.197266 6.0253906L6.0253906 11.197266C4.671281 12.551375 4.671281 14.792375 6.0253906 16.146484L13.990234 24.111328L8.9160156 29.183594C8.4960384 29.603571 8.1884588 30.12585 8.0253906 30.699219L5.0585938 41.087891 A 1.50015 1.50015 0 0 0 6.9121094 42.941406L17.302734 39.974609 A 1.50015 1.50015 0 0 0 17.304688 39.972656C17.874212 39.808939 18.39521 39.50518 18.816406 39.083984L40.949219 16.949219C43.670344 14.228094 43.670344 9.7719064 40.949219 7.0507812C39.589209 5.6901377 37.794699 5.0097656 36 5.0097656C34.205301 5.0097656 32.410791 5.6901377 31.050781 7.0507812L24.111328 13.990234L22.226562 12.105469 A 1.50015 1.50015 0 0 0 21.892578 11.771484L18.226562 8.1054688 A 1.50015 1.50015 0 0 0 17.892578 7.7714844L16.146484 6.0253906C15.46943 5.3483358 14.570678 5.0097656 13.671875 5.0097656 z M 13.671875 7.9902344C13.79666 7.9902344 13.921445 8.0425392 14.025391 8.1464844L14.878906 9L14.439453 9.4394531 A 1.50015 1.50015 0 1 0 16.560547 11.560547L17 11.121094L18.878906 13L18.439453 13.439453 A 1.50015 1.50015 0 1 0 20.560547 15.560547L21 15.121094L21.990234 16.111328L16.111328 21.990234L8.1464844 14.025391C7.938594 13.8175 7.938594 13.52625 8.1464844 13.318359L13.318359 8.1464844C13.422305 8.0425392 13.54709 7.9902344 13.671875 7.9902344 z M 36 7.9921875C37.020801 7.9921875 38.040182 8.3855186 38.826172 9.171875 A 1.50015 1.50015 0 0 0 38.828125 9.171875C40.403 10.74675 40.403 13.25325 38.828125 14.828125L36.888672 16.767578L31.232422 11.111328L33.171875 9.171875C33.957865 8.3855186 34.979199 7.9921875 36 7.9921875 z M 29.111328 13.232422L34.767578 18.888672L16.693359 36.962891C16.634729 37.021121 16.560472 37.065723 16.476562 37.089844L8.6835938 39.316406L10.910156 31.521484 A 1.50015 1.50015 0 0 0 10.910156 31.519531C10.933086 31.438901 10.975086 31.366709 11.037109 31.304688L29.111328 13.232422 z M 36.060547 25.939453L33.939453 28.060547L36.878906 31L36.439453 31.439453 A 1.50015 1.50015 0 1 0 38.560547 33.560547L39 33.121094L40.025391 34.146484C40.233281 34.354375 40.233281 34.645625 40.025391 34.853516L34.853516 40.025391C34.645625 40.233281 34.354375 40.233281 34.146484 40.025391L28.060547 33.939453L25.939453 36.060547L32.025391 42.146484C33.3795 43.500594 35.6205 43.500594 36.974609 42.146484L42.146484 36.974609C43.500594 35.6205 43.500594 33.3795 42.146484 32.025391L40.226562 30.105469 A 1.50015 1.50015 0 0 0 39.892578 29.771484L36.060547 25.939453 z" fill="#333333" />
+                        </svg>
+                    </div>
+                    <span class="service__name">Design UI/UX</span>
+                    <p class="service__details">
+                        Design de site web,application ou autres tâches liées à la conception, j'adore les problèmes numérique et les résoudre
+                    </p>
+                </div>
+                <div class="service reveal">
+                    <div class="service__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path d="M38.703125 3C38.441125 3 38.176156 3.0242656 37.910156 3.0722656C37.066156 3.2242656 36.261078 3.6647031 35.580078 4.3457031L24.316406 15.607422C23.975406 15.948422 23.724797 16.372984 23.591797 16.833984L22.398438 21L11.5 21 A 1.50015 1.50015 0 1 0 11.5 24L23 24 A 1.50015 1.50015 0 0 0 23.273438 23.978516C23.304648 23.981731 23.333889 23.996869 23.365234 23.998047C23.557234 24.005047 23.751594 23.97525 23.933594 23.90625L29.164062 22.408203C29.625062 22.275203 30.049625 22.024594 30.390625 21.683594L41.654297 10.419922C42.335297 9.7389219 42.775734 8.9338437 42.927734 8.0898438C42.975734 7.8238437 43 7.558875 43 7.296875C43.002 6.157875 42.561234 5.0797656 41.740234 4.2597656C40.920234 3.4387656 39.842125 2.998 38.703125 3 z M 8.5 6C6.019 6 4 8.019 4 10.5L4 30.5C4 32.981 6.019 35 8.5 35L17 35L17 40L13.5 40 A 1.50015 1.50015 0 1 0 13.5 43L34.5 43 A 1.50015 1.50015 0 1 0 34.5 40L31 40L31 35L39.5 35C41.981 35 44 32.981 44 30.5L44 10.652344C43.734 11.068344 43.432406 11.470937 43.066406 11.835938L41 13.902344L41 30.5C41 31.327 40.327 32 39.5 32L8.5 32C7.673 32 7 31.327 7 30.5L7 10.5C7 9.673 7.673 9 8.5 9L28.097656 9L31.097656 6L8.5 6 z M 20 35L28 35L28 40L20 40L20 35 z" fill="#333333" />
+                        </svg>
+                    </div>
+                    <span class="service__name">Application Mobile & du bureau</span>
+                    <p class="service__details">
+                        Obtenez une application mobile pour vos différents services, y compris des applications du bureau pour la gestion de vos activités.
+                    </p>
+                </div>
+                <div class="service reveal">
+                    <div class="service__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path d="M10.5 6C8.0324991 6 6 8.0324991 6 10.5L6 13.5C6 15.967501 8.0324991 18 10.5 18L18.5 18C20.967501 18 23 15.967501 23 13.5L23 10.5C23 8.0324991 20.967501 6 18.5 6L10.5 6 z M 29.5 6C27.032499 6 25 8.0324991 25 10.5L25 23.5C25 25.967501 27.032499 28 29.5 28L37.5 28C39.967501 28 42 25.967501 42 23.5L42 10.5C42 8.0324991 39.967501 6 37.5 6L29.5 6 z M 10.5 9L18.5 9C19.346499 9 20 9.6535009 20 10.5L20 13.5C20 14.346499 19.346499 15 18.5 15L10.5 15C9.6535009 15 9 14.346499 9 13.5L9 10.5C9 9.6535009 9.6535009 9 10.5 9 z M 29.5 9L37.5 9C38.346499 9 39 9.6535009 39 10.5L39 23.5C39 24.346499 38.346499 25 37.5 25L29.5 25C28.653501 25 28 24.346499 28 23.5L28 10.5C28 9.6535009 28.653501 9 29.5 9 z M 10.5 20C8.0324991 20 6 22.032499 6 24.5L6 37.5C6 39.967501 8.0324991 42 10.5 42L18.5 42C20.967501 42 23 39.967501 23 37.5L23 24.5C23 22.032499 20.967501 20 18.5 20L10.5 20 z M 10.5 23L18.5 23C19.346499 23 20 23.653501 20 24.5L20 37.5C20 38.346499 19.346499 39 18.5 39L10.5 39C9.6535009 39 9 38.346499 9 37.5L9 24.5C9 23.653501 9.6535009 23 10.5 23 z M 29.5 30C27.032499 30 25 32.032499 25 34.5L25 37.5C25 39.967501 27.032499 42 29.5 42L37.5 42C39.967501 42 42 39.967501 42 37.5L42 34.5C42 32.032499 39.967501 30 37.5 30L29.5 30 z M 29.5 33L37.5 33C38.346499 33 39 33.653501 39 34.5L39 37.5C39 38.346499 38.346499 39 37.5 39L29.5 39C28.653501 39 28 38.346499 28 37.5L28 34.5C28 33.653501 28.653501 33 29.5 33 z" fill="#333333" />
+                        </svg>
+                    </div>
+                    <span class="service__name">Formations en programmation</span>
+                    <p class="service__details">
+                        Faites-vous formé rapidement en programmation en souscrivant à nos formations tres adaptées à toutes les personnes.
+                    </p>
+                </div>
+            </main>
+        </section>
+        <section class="container__project" id="project">
+            <div class="title">
+                <span class="section-text reveal">MOINS PARLER PLUS DE TRAVAIL</span>
+                <p class="reveal">Il est temps de voir mes recents travaux, voici quelques projets, un travail de hauteur et une exploration de conception que j'ai faite pour les clients. Un travail de piquetage rapide</p>
+            </div>
+            <div class="project__container">
+                <div class="project__left">
+                    <div class="project">
+                        <div class="project__image clr-1 reveal">
+                            <img src="./img/projects%20(2).png" alt="">
+                        </div>
+                        <div class="project__details">
+                            <span class="name__project reveal">COMPOSANT DE NOTATION</span>
+                            <p class="project__descriptions reveal">
+                                HTML5,CSS3,SASS,JS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image clr-2 reveal">
+                            <img src="./img/projects%20(4).png" alt="">
+                        </div>
+                        <div class="project__details">
+                            <span class="name__project reveal">TIC TAC TOE GAME</span>
+                            <p class="project__descriptions reveal">
+                                HTML5,CSS3,SASS,JS
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project__rigth">
+                    <div class="project">
+                        <div class="project__image clr-3 reveal">
+                            <img src="./img/projects%20(5).png" alt="">
+                        </div>
+                        <div class="project__details">
+                            <span class="name__project reveal">WINDOWS ADMIN APP</span>
+                            <p class="project__descriptions reveal">
+                                PASCAL,FMX,MYSQL,SQLLITE
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__image clr-4 reveal">
+                            <img src="./img/projects%20(6).png" alt="">
+                        </div>
+                        <div class="project__details">
+                            <span class="name__project reveal">PASSWORD GENERATOR</span>
+                            <p class="project__descriptions reveal">
+                                HTML5,CSS3,SASS,JS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container__about" id="about">
+            <div class="about__profil reveal">
+                <img src="./img/norba.png" alt="image_profil">
+            </div>
+            <div class="about__text">
+                <span class="title-section reveal">À PROPOS DE MOI</span>
+                <span class="section-text reveal">VOUS CHERCHEZ UN DEVELOPPEUR CREATIF ? JE PEUX VOUS AIDER</span>
+                <p class="reveal">
+                    Je me nomme Yemuang Bope Norbert, suis un jeune informaticien résidant en République démocratique du Congo passionné par le développement informatique et autres domaines informatiques.
+                    <br><br>
+                    Je suis Développeur Web Front-end Junionr / Développeur Delphi full-stack / Administrateur de base des données sous MYSQL...
+                </p>
+                <div class="controll__banner">
+                    <button class="btn btn-clr-orange reveal">Engagez-moi maintenant</button>
+                    <button class="btn btn-clr-black reveal">Suivez-moi</button>
+                </div>
+            </div>
+        </section>
+        <section class="container__clients">
+            <div class="title">
+                <span class="title-section reveal">CLIENTS</span>
+                <span class="section-text reveal">LEURS TEMOIGNAGES</span>
+            </div>
+            <div class="temoignage__container">
+                <div class="temoignage reveal">
+                    <div class="profil clr-1-quote">
+                        <img src="./img/client-1.jpg" alt="">
+                        <span class="quote ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                <path d="M16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219C15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844C7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469C9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156C14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219C36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844C28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469C30.577727 19.777157 32.122152 17.196657 33.642578 15.410156C35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" fill="#333333" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nobis, delectus debitis iusto, fugit eligendi animi, commodi nemo asperiores mollitia quis incidunt quas. Ut, cumque mollitia porro neque similique, libero!
+                    </p>
+                    <div class="details__clients clr-1-quote">
+                        <span class="name">Serge Manyx</span>
+                        <span class="skill">Marketing Manager</span>
+                    </div>
+                </div>
+                <div class="temoignage reveal">
+                    <div class="profil clr-2-quote">
+                        <img src="./img/client-5.jpg" alt="">
+                        <span class="quote ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                <path d="M16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219C15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844C7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469C9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156C14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219C36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844C28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469C30.577727 19.777157 32.122152 17.196657 33.642578 15.410156C35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" fill="#333333" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nobis, delectus debitis iusto, fugit eligendi animi, commodi nemo asperiores mollitia quis incidunt quas. Ut, cumque mollitia porro neque similique, libero!
+                    </p>
+                    <div class="details__clients clr-2-quote">
+                        <span class="name">Serge Manyx</span>
+                        <span class="skill">Marketing Manager</span>
+                    </div>
+                </div>
+                <div class="temoignage reveal">
+                    <div class="profil clr-3-quote">
+                        <img src="./img/client-4.jpg" alt="">
+                        <span class="quote ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                <path d="M16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219C15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844C7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469C9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156C14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219C36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844C28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469C30.577727 19.777157 32.122152 17.196657 33.642578 15.410156C35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z" fill="#333333" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nobis, delectus debitis iusto, fugit eligendi animi, commodi nemo asperiores mollitia quis incidunt quas. Ut, cumque mollitia porro neque similique, libero!
+                    </p>
+                    <div class="details__clients clr-3-quote">
+                        <span class="name">Serge Manyx</span>
+                        <span class="skill">Marketing Manager</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        <section class="partenaire">
+            <img src="./img/campany-2.png" alt="">
+            <img src="./img/campany-3.png" alt="">
+            <img src="./img/campany-6.png" alt="">
+            <img src="./img/campany-5.png" alt="">
+        </section>
+-->
+        <footer class="container__footer" id="contact">
+            <span>
+                <h2 class="reveal">NEWSLETTER</h2>
+                <strong class="reveal">Restez à jour,abonnez-vous à la newsletter gratuitement.</strong>
+            </span>
+
+            <form action="">
+                <input type="email" name="" id="" placeholder="adresse email ici" class="reveal">
+                <button class="btn btn-clr-orange reveal">S'abonner maintenant</button>
+            </form>
+            <p class="reveal">Copyright (c) 2022 Norbert Yemuang</p>
+        </footer>
+    </main>
+
+    <script src="./js/reveal.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
